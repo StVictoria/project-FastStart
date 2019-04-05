@@ -293,8 +293,8 @@
         </div>
     </div>
     <div class='arrow_up'></div>
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="/js/jquery-3.3.1.min.js"></script>
     <!-- <script src="/js/parallax.min.js"></script> -->
-    <script src='main.js'></script>
+    <script src='/js/main.js'></script>
 </body>
 </html>
