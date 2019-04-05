@@ -14,11 +14,6 @@ window.addEventListener('load', function(){
     }, 1500);
 });
 
-//paralax
-// function parallax(){
-//     let scrolled = $(window).scrollTop();
-//     $('.bg').css('top', -(scrolled*0.2) + 'px');
-// }
 
 //фиксирование гл меню
 let menu = document.querySelector('.menu');
@@ -161,4 +156,38 @@ buttons.forEach(function(button){
     });
 });
 
+//parallax
+// $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
+
 //swipe
+
+N = tape.children.length;
+
+function lock(e) {};
+
+function move(e) {};
+
+tape.addEventListener('mousedown', lock, false);
+tape.addEventListener('touchstart', lock, false);
+
+tape.addEventListener('mouseup', move, false);
+tape.addEventListener('touchend', move, false);
+
+let x_start = null;
+
+function unify(e) { return e.changedTouches ? e.changedTouches[0] : e };
+
+function lock(e) { x_start = unify(e).clientX };
+
+let i = 0;
+
+function move(e) {
+  if(x_start || x_start === 0) {
+    let dx = unify(e).clientX - x_start, s = Math.sign(dx);
+  
+    if((i > 0 || s < 0) && (i < N - 1 || s > 0))
+      tape.style.setProperty('--i', i -= s);
+	
+      x_start = null
+  }
+};

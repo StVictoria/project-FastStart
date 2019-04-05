@@ -76,6 +76,8 @@ a{
     background: url(/images/bg.jpg) top center / cover no-repeat;
     background-attachment: fixed;
     color: #ffffff;
+    // min-height: 400px;
+    // background: transparent;
 
     &_field{
         width: 100%;
@@ -980,13 +982,16 @@ a{
         &_tape{
             display: flex;
             position: relative;
-            width: 300%;
             transition: 1s all;
+            --n: 3;
+            width: calc(var(--n)*100%);
+            transform: translate(calc(var(--i, 0)/var(--n)*-100%));
     
             &_slide{
-                width: 100%;
+                width: calc(100%/var(--n));
                 text-align: center;
                 font-weight: 100;
+                pointer-events: none;
     
                 .photo{
                     border-radius: 50%;

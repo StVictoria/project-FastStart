@@ -1229,15 +1229,19 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 300%;
   -webkit-transition: 1s all;
   transition: 1s all;
+  --n: 3;
+  width: calc(var(--n)*100%);
+  -webkit-transform: translate(calc(var(--i, 0)/var(--n)*-100%));
+          transform: translate(calc(var(--i, 0)/var(--n)*-100%));
 }
 
 .reviews_window_tape_slide {
-  width: 100%;
+  width: calc(100%/var(--n));
   text-align: center;
   font-weight: 100;
+  pointer-events: none;
 }
 
 .reviews_window_tape_slide .photo {

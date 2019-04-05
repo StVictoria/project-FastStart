@@ -14,7 +14,7 @@
     <div class="preloader">
         <div class="loading"></div>
     </div>
-    <div class='header'>
+    <div class='header parallax-window' data-parallax="scroll" data-image-src="/images/bg.jpg">
         <div class='header_field'>
             <div class="wrapper">
                 <div class="header_field_content">
@@ -294,6 +294,7 @@
     </div>
     <div class='arrow_up'></div>
     <script src="jquery-3.3.1.min.js"></script>
+    <!-- <script src="/js/parallax.min.js"></script> -->
     <script src='main.js'></script>
 </body>
 </html>
