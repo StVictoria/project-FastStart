@@ -157,10 +157,8 @@ buttons.forEach(function(button){
 });
 
 //parallax
-// $('.parallax-window').parallax({imageSrc: '/path/to/image.jpg'});
 
 //swipe
-
 N = tape.children.length;
 
 function lock(e) {};
