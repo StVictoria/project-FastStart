@@ -15,31 +15,26 @@
         <div class="loading"></div>
     </div>
     <div class='header'>
-        <div class="parallax_group">
-            <div class="parallax__layer back"></div>
-            <div class="parallax__layer base">
-                <div class='header_field'>
-                    <div class="wrapper">
-                        <div class="header_field_content">
-                            <div class="header_field_content_info">
-                                <div class='logo animate'></div>
-                                <h1 class='animate'>Разработка сайтов любой сложности</h1>
-                                <p class='animate'>FastStart - команда опытных профессионалов по реализации задач любой сложности в области web-разработки и программирования. В кратчайшие сроки мы реализуем все ваши идеи и мысли и дадим мощный толчок вашему бизнесу!</p>
-                                <div class="buttons animate"> 
-                                    <button class='about_us'>О нас</button>
-                                    <button class='price'>Стоимость</button>
-                                </div>
-                            </div>
-                            <div class="header_field_content_form animate">
-                                <form class='head' method='POST' action='/form.php'>
-                                    <h2>Свяжитесь со мной</h2>
-                                    <input type='text' name='fio' placeholder='Моё имя'>
-                                    <input type='email' name='email' placeholder='Мой e-mail'>
-                                    <button type='submit'>Отправить запрос</button>
-                                    <p>Нажимая кнопку "ОТПРАВИТЬ ЗАПРОС" Вы даете согласие на обработку личных данных в соотстветствии правилами политики конфиденциальности.</p>
-                                </form>
-                            </div>
+        <div class='header_field'>
+            <div class="wrapper">
+                <div class="header_field_content">
+                    <div class="header_field_content_info">
+                        <div class='logo animate'></div>
+                        <h1 class='animate'>Разработка сайтов любой сложности</h1>
+                        <p class='animate'>FastStart - команда опытных профессионалов по реализации задач любой сложности в области web-разработки и программирования. В кратчайшие сроки мы реализуем все ваши идеи и мысли и дадим мощный толчок вашему бизнесу!</p>
+                        <div class="buttons animate"> 
+                            <button class='about_us'>О нас</button>
+                            <button class='price'>Стоимость</button>
                         </div>
+                    </div>
+                    <div class="header_field_content_form animate">
+                        <form class='head' method='POST' action='/form.php'>
+                            <h2>Свяжитесь со мной</h2>
+                            <input type='text' name='fio' placeholder='Моё имя'>
+                            <input type='email' name='email' placeholder='Мой e-mail'>
+                            <button type='submit'>Отправить запрос</button>
+                            <p>Нажимая кнопку "ОТПРАВИТЬ ЗАПРОС" Вы даете согласие на обработку личных данных в соотстветствии правилами политики конфиденциальности.</p>
+                        </form>
                     </div>
                 </div>
             </div>

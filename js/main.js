@@ -1,9 +1,9 @@
-//сделай на чистом!!!!!!!
-// $('.arrow_up').click(function(){
-//     $('html, body').animate({
-//         scrollTop: 0
-//     }, 1000);
-// });
+//topButton
+$('.arrow_up').click(function(){
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
+}); //изменить на чистый
 
 //прелоадер
 window.addEventListener('load', function(){
